@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #d4cde0;
 }
 
 .nav-links {
@@ -36,14 +36,14 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #d4cde0;
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .nav-bar a {
-    color: #fff;
+    color: #d4cde0;
     transition: color 0.3s ease;
 }
 
@@ -80,45 +80,5 @@ a:hover {
     .nav-links a {
         padding: 10px;
     }
-}
-
-.about-me {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 250px;
-}
-
-.about-me h2{
-    font-size: 50px;
-    color: #fbca0c;
-    text-align: center;
-}
-
-.about-text {
-    color: #171731;
-    background-color: #888490;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.contact-me {
-    margin: 20px;
-    
-}
-
-.footer {
-    background-color: #171731;
-    color: #fbca0c;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    height: auto;
-    bottom: 0;
-}
-
-.footer-logo img{
-height: 100px;
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/style/style.css";
+import "../assets/style/resume.css";
 
 function Resume() {
   return (
@@ -62,13 +62,13 @@ function Resume() {
       </p>
 
       <p>
-        <strong>Biblio Library Content Manager</strong><br />
+        <strong>Project 2: Biblio Library Content Manager</strong><br />
         - Worked on a team of classmates to create a library content manager with JS, CSS, Sequelize, ORM, and Handlebars.<br />
         - Primarily worked on Handlbars to create a responsive layout.<br />
         - Source code: <a href="https://github.com/Koro999/Library-Content-Manager" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
       <p>
-        <strong>FreshFit Express</strong><br />
+        <strong>Project 3: FreshFit Express</strong><br />
         - Worked on a team of classmates to create a food delivery app with JS, CSS, Sequelize, ORM, and Handlebars.<br />
         - Primarily worked on components and CSS to create a responsive layout with a nice design.<br />
         - Source code: <a href="https://github.com/sumanpreetk01/FreshFit-Express" target="_blank" rel="noopener noreferrer">GitHub</a>

@@ -2,11 +2,12 @@ import React from "react";
 import RRimg from '../assets/RealtyReachHome.png';
 import BLimg from '../assets/BiblioLibrary.png';
 import FFEimg from '../assets/FreshFitExpressHome.png';
-import "../assets/style/style.css";
+import "../assets/style/portfolio.css";
 
 function Portfolio() {
     return (
       <div className="project-list">
+        <h2>Projects I've Worked On</h2>
         <div className="project-item">
           <h3>Realty Reach</h3>
           <img src={RRimg} alt="Realty Reach Thumbnail" />
