@@ -1,0 +1,47 @@
+.resume {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #888490;
+    justify-content: center;
+    align-items: center;
+}
+  
+.resume h2 {
+    font-size: 50px;
+    color: #fbca0c;
+    text-align: center;
+}
+  
+.resume p {
+    color: #101011;
+    line-height: 1.6;
+}
+  
+.resume h3 {
+    color: #3e1a79;
+    margin-top: 20px;
+}
+  
+.resume ul {
+    margin-bottom: 20px;
+}
+  
+.resume ul li {
+    list-style-type: none;
+}
+  
+.resume strong {
+    font-weight: bold;
+}
+  
+.resume a {
+    color: #fbca0c;
+    text-decoration: none;
+}
+  
+.resume a:hover {
+    text-decoration: underline;
+ }
+  

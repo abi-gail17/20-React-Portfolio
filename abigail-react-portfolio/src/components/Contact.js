@@ -1,53 +1,62 @@
 import React, { useState } from 'react';
-import "../assets/style/style.css";
+import "../assets/style/contact.css";
 
-const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+function Contact() {
+        const [formData, setFormData] = useState({
+          name: '',
+          email: '',
+          message: '',
+        });
+      
+        const [errors, setErrors] = useState({
+          email: '',
+        });
+      
+        const [successMessage, setSuccessMessage] = useState('');
+      
+        const handleChange = (e) => {
+          const { name, value } = e.target;
+      
+          setFormData({
+            ...formData,
+            [name]: value,
+          });
+      
+          setErrors({
+            ...errors,
+            email: '',
+          });
+        };
+      
+        const handleSubmit = (e) => {
+          e.preventDefault();
+      
+          if (!isValidEmail(formData.email)) {
+            setErrors({
+              ...errors,
+              email: 'Please enter a valid email address.',
+            });
+            return;
+          }
+      
 
-  const [errors, setErrors] = useState({
-    email: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-
-    setErrors({
-      ...errors,
-      email: '',
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!isValidEmail(formData.email)) {
-      setErrors({
-        ...errors,
-        email: 'Please enter a valid email address.',
-      });
-      return;
-    }
-
-    console.log('Form submitted:', formData);
-  };
-
-  const isValidEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
+          setSuccessMessage('Form submitted successfully!');
+          setTimeout(() => {
+            setSuccessMessage('');
+            window.location.reload();
+          }, 1000); 
+        };
+      
+        const isValidEmail = (email) => {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return emailRegex.test(email);
+        };
 
   return (
     <div className='contact-me'>
       <h2>Contact Me</h2>
+      <p>If you have any questions or just want to reach out, enter your contact details below.</p>
+      <div className='contact-form'>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -86,6 +95,7 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </div>
       </form>
+      </div>
     </div>
   );
 };
